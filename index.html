@@ -1,1 +1,19 @@
-<h1>Hello,The is a website about TV list.</h1>
+/*<h1>Hello,The is a website about TV list.</h1>*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Pages TXT Example</title>
+</head>
+<body>
+    <script>
+        fetch('demo.m3u')
+            .then(response => response.text())
+            .then(text => {
+                console.log(text);
+                // 这里可以处理文本内容，比如将其显示在页面上
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>
